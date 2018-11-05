@@ -7,9 +7,11 @@
   <title>Friends</title>
   <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
+  <header class="top-header">
     <div class="header__top">
       <div class="header__column">
         <i class="fas fa-plane"></i>
@@ -38,6 +40,7 @@
       </div>
     </div>
   </header>
+
   <main class="friends">
     <div class="search-bar">
       <i class="fas fa-search"></i>
@@ -49,9 +52,9 @@
       </header>
       <div class="friends__section-rows">
         <div class="friends__section-row">
-          <a href="profile.html">
-            <img src="images/avatar.jpg" alt="">
-            <span class="friends__section-name">Nicolas</span>
+          <img src="images/avatar.jpg" alt="">
+          <a href="profile.html" class="friends__section-name">
+            Nicolas
           </a>
         </div>
         <div class="friends__section-row">
@@ -60,25 +63,26 @@
         </div>
       </div>
     </section>
-    <section class="friends__secion">
+    <section class="friends__section">
       <header class="friends__section-header">
         <h6 class="friends__section-title">Friends</h6>
       </header>
       <div class="friends__section-rows">
-        <div class="friends__section-row">
+        <div class="friends__section-row with-tagline">
           <div class="friends__section-column">
-            <a href="profile.html">
+            <!-- <a href="profile.html"> -->
               <img src="images/avatar.jpg" alt="">
               <span class="friends__section-name">Lynn</span>
-            </a>
+            <!-- </a> -->
           </div>
-          <span class="friends__section-tafline">
+          <span class="friends__section-tagline">
             Life is short, so live your life.
           </span>
         </div>
       </div>
     </section>
   </main>
+
   <nav class="tab-bar">
     <a href="index.html" class="tab-bar__tab tab-bar__tab--selected">
       <i class="fas fa-user-friends fa-lg"></i>
