@@ -1,22 +1,42 @@
-.top-header a {
-  text-decoration: none;
-  color: white;
-}
-.profile__header {
-  margin-top: 300px;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-}
-.profile__header img {
-  width: 70px;
-  border-radius: 50%;
-  margin-bottom: 12px;
+.top-header--transparent {
+  background-color: transparent;
 }
 
-input {
+.profile .profile__header {
+  height: 80vh;
+  width: 100%;
+  /* background-color: gold; */
+  background-image: url("http://www.lirent.net/wp-content/uploads/2014/10/Android-Lollipop-Material-Design-Wallpaper-5.jpg");
+  background-position: center left;
+  background-size: cover;
+  position: relative;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.profile__header .profile__header-container {
   text-align: center;
+  position: relative; /* absolute??? */
+  bottom: -60px;
+}
+.profile__header .profile__header-container img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile .profile__container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__container input {
+  padding: 3px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .profile__actions {
   display: flex;
@@ -26,19 +46,23 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 15px;
+  cursor: pointer; /*not-allowed*/
 }
 .profile__action .profile__action-circle {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #c1c1c1;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  margin-bottom: 7px;
+  color: #523737;
+  padding: 15px;
+  margin-bottom: 12px;
 }
 .profile__action .profile__action-title {
   font-size: 12px;
+  font-weight: 600;
   color: #c1c1c1;
 }

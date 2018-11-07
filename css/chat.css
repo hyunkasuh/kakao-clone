@@ -1,0 +1,113 @@
+.body-chat {
+  padding-bottom: 0;
+}
+.chat-header,
+.chat-header a {
+  background-color: #a1c0d6;
+  color: black;
+}
+
+.chat-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.chat {
+  background-color: #a1c0d6;
+  height: 100vh;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.chat .date-divider {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+.chat__message {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+.chat__message--from-me {
+  justify-content: flex-end;
+}
+.chat__message-time {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.chat__message-body {
+  font-size: 14px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+.chat__message--from-me .chat__message-body {
+  background-color: #ffe934;
+  margin-left: 5px;
+}
+.chat__message--to-me {
+  justify-content: flex-start;
+}
+.chat__message--to-me img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  /* margin-left: 10px; */
+  align-self: flex-start; /*IMPORTANT*/
+}
+.chat__message .chat__message-username {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.chat__message-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__message--to-me .chat__message-time {
+  padding-bottom: 0;
+  margin-left: 5px;
+}
+
+.type-message {
+  width: 100%;
+  position: fixed;
+  bottom: 0; /* IMPORTANT!!! */
+  height: 45px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 5px;
+  align-items: center;
+}
+
+.type-message .fa-plus {
+  color: #b4b4b4;
+}
+
+.type-message__input {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.type-message__input input {
+  width: 100%;
+  padding: 10px;
+}
+.type-message__input .fa-smile {
+  color: #b4b4b4;
+  position: absolute;
+  right: 40px;
+}
+.type-message__input .fa-microphone {
+  border-radius: 5px;
+  background-color: #ffe934;
+  color: #523737;
+  padding: 10px;
+  cursor: pointer;
+}

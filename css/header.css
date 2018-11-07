@@ -37,3 +37,7 @@
 .top-header .header__number {
   color: yellow;
 }
+
+.top-header a {
+  color: white;
+}
