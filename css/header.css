@@ -5,6 +5,7 @@
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 9;
 }
 .top-header .header__top,
 .top-header .header__bottom {
@@ -21,6 +22,11 @@
 .top-header .header__column {
   width: 33.3%;
 }
+
+.top-header .header__bottom .header__column:first-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .top-header .header__column:last-child {
   text-align: right;
 }
